@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+*{
+ padding:0;
+ margin: 0;
+ text-decoration: none;
+ list-style: none;
+ box-sizing: border-box;
+ font-family:sans-serif;
+}
+.wellcome{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #0082e6;
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 2px;
+    margin-bottom:1px ;
+    z-index: 90;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+
+}
+.wellcome h1{
+    line-height: 80px;
+    font-size:48px;
+    color:white;
+    font-family:'Poppins',sans-serif;
+    text-shadow: 8px 0px 4px #131212;
+    /* text-shadow: 2px 0 0px rgba(14, 13, 13, 0.9), 3px 2px 0px rgba(24, 20, 22, 0.5), 3px 0 3px black, 5px 0 3px #1a1617, 6px 2px 3px rgba(48, 44, 45, 0.5), 6px 0 9px #110f0f, 8px 0 9px #071018, 9px 2px 9px rgba(22, 22, 21, 0.5), 9px 0 18px #1d1d1c, 11px 0 18px #242321,
+     12px 2px 18px rgba(77,66,0,0.5), 12px 0 30px rgb(26, 26, 39), 14px 0 3px #0d0e0c, 15px 2px 30px rgba(10, 10, 10, 0.5), 15px 0 5px #727472, 17px 0 4px whitesmoke, 7px 2px 5px white; */
+}
+.logo{
+    width: 80px;
+    height: 78px;
+    margin-left: 26px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+div.body{
+    background-color: rgb(224, 233, 233);
+    text-align: center;
+    width:100%;
+}
+nav div.right{
+    float: right;
+}
+nav{
+    background: #c6c9cc;
+    height: 60px;
+    width:100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    position: fixed;
+    z-index: 30;
+    top: 82px;
+}
+/* label.logo{
+    color: white;
+    font-size: 34px;
+    line-height: 50px;
+    padding: 0 100px;
+} */
+nav label{
+    line-height: 60px;
+    margin-left:60px;
+    font-size:26px;
+    text:bold;
+    color: indigo;
+    text-shadow: 2px 2px 4px #000000;
+}
+nav ul{
+    float: right;
+    margin-right:60px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a{
+   color:#0082e6;
+   font-size: 20px;
+   padding: 7px 13px;
+   border-radius:4px ;
+   -webkit-border-radius:4px ;
+   -moz-border-radius:4px ;
+   -ms-border-radius:4px ;
+   -o-border-radius:4px ;
+}
+.logout{
+    margin-left: 200px;
+    background-color:indigo;
+    color: white;
+}
+.active,a:hover{
+    color: white;
+    background:#0082e6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+  }
+  .footer{
+    height: 400px;
+    background-color: white;
+    margin: 40px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 750px;
+}
+
+.carousel-indicators {
+    height: 0%;
+    margin-top: 60%;
+    margin-bottom: 3%;
+}
+.dashBoard{
+    columns:3;
+    width:90%;
+    margin-top: 40px;
+    height: max-content;
+    align-items: center;
+}
+.dashBoard .dashBoardCard{
+    width: 90%;
+    height: max-content;
+    margin: 30px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.918);
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    align-items: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+@media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+    nav ul{
+        margin-top: 30px;
+    }
+  }
+  @media screen and (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    .wellcome h1{
+        font-size:24px;
+    }
+    ul{
+      position: fixed;
+      width: 30%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 50px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 30px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    p{
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 40px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    .colorBack{
+        background-color:#21618c ;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    div.body{
+        width: calc(100%-25%);
+    }
+  }

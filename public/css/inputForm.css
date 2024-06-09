@@ -1,0 +1,123 @@
+
+.container {
+  width: 96%;
+  height: max-content;
+  padding: 30px;
+  margin-left:20px;
+  margin-bottom: 60px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+
+}
+.dashBoard{
+    columns:3;
+    width:90%;
+    margin-top: 0px;
+    height: max-content;
+    align-items: center;
+}
+.dashBoard .dashBoardCard{
+    width: 90%;
+    height: max-content;
+    margin: 30px;
+    padding: 7px 0px 14px 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    align-items: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.dashBoard .dashBoardCard div{
+    margin: 30px;
+    text-align: center;
+}
+input[type=text], input[type=password],input[type=email],
+input[type=date],input[type=file] ,input[type=tel],textarea,select {
+    width: 80%;
+    margin-left:30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    }
+input[type=text]:focus, input[type=password]:focus,
+input[type=file]:focus, input[type=tel]:focus,textarea:focus {
+  outline: none;
+  border-color: #0034e0;
+  margin-left:30px;
+
+}
+input[type=radio]{
+    margin-left:30px;
+    margin-bottom: 30px;
+}
+input{
+ border-radius: 10px;
+}
+hr {
+  border-top: 1px solid #b8b2b2;
+  margin-bottom: 16px;
+  padding: 0px;
+}
+label{
+    margin-bottom: 0px;
+}
+div.bodyleft{
+    float: left;
+    width: 46%;
+    padding: 20px;
+    margin-left: 10px;
+}
+div.bodyright{
+    float: left;
+    width: 46%;
+    padding: 20px;
+    margin-left: 20px;
+
+}
+.buttonContainer{
+   align-content: center;
+   display: inline-flex;
+   margin:0px 29px 40px 100px;
+   float: right;
+}
+.btn-primary,.btn-danger {
+  padding: 10px 26px;
+  margin: 8px 8px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.registerbtn:hover {
+  opacity: 2;
+}
+@media screen and (max-width: 800px) {
+    .container{
+        margin-top: 30px;
+    }
+    .dashBoard{
+        columns: 2;
+     }
+    input[type=text],input[type=radio],select{
+        width: 84%;
+        }
+    div.bodyleft,div.bodyright{
+        width: 90%;
+    }
+    .buttonContainer{
+        padding: 0px;
+    }
+    .btn-primary,.btn-danger {
+        padding: 10px 10px;
+        cursor: pointer;
+        margin: 4px;
+      }
+     .smallSize{
+        width:90%;
+
+     }
+}
